@@ -1,24 +1,57 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './pages/home/Home';
+import AboutUs from './pages/AboutUs/about';
+import ContactUs from "./pages/ContactUs/Contact";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Footer from './pages/Footer/Footer';
+import Navbar from './components/Navbar';
+import Login from './components/Login/Login';
+import { useAuth } from './Context/Auth';
+import ViewProduct from './pages/Product/viewProduct';
 
 function App() {
+  const { user } = useAuth();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+
+      {user && <Navbar />}
+
+      <Routes>
+
+        <Route 
+          path="/" 
+          element={user ? <Home /> : <Navigate to="/login" />} 
+        />
+
+        <Route 
+          path="/about" 
+          element={user ? <AboutUs /> : <Navigate to="/login" />} 
+        />
+
+        <Route 
+          path="/contact" 
+          element={user ? <ContactUs /> : <Navigate to="/login" />} 
+        />
+
+        <Route 
+          path="/login" 
+          element={!user ? <Login /> : <Navigate to="/" />} 
+        />
+
+        <Route
+          path='/product/:id'
+          element={!user ? <Login /> : <ViewProduct />}
+        />
+
+
+
+      </Routes>
+
+      {user && <Footer />}
+
+    </BrowserRouter>
   );
 }
 

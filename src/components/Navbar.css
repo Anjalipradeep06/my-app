@@ -1,0 +1,97 @@
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: black;
+}
+
+/* Brand */
+.navbar-brand {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navbar-brand:hover,
+ .navbar-brand:focus { 
+    color: white;
+     transition: none !important;
+ }
+
+/* Desktop menu */
+.menu {
+  display: flex;
+  gap: 15px;
+}
+
+/* Links */
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Remove all transitions */
+.nav-list * {
+  transition: none !important;
+}
+
+/* Dropdown button */
+.dropdown-btn {
+  font-size: 20px;
+  background: #222;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+}
+/* Dropdown menu */
+.dropdown-menu-custom {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  background: white;
+  list-style: none;
+  padding: 10px 0;
+  width: 150px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 6px;
+}
+
+/* Dropdown items */
+.dropdown-menu-custom li {
+  padding: 8px 15px;
+}
+
+.dropdown-menu-custom a,
+.dropdown-menu-custom button {
+  color: #333;
+  text-decoration: none;
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+/* ================== MOBILE (≤580px) ================== */
+@media (max-width: 580px) {
+  .menu {
+    display: none; /* hide normal menu */
+  }
+
+  .dropdown {
+    display: block;
+  }
+}
+
+/* Desktop: hide dropdown */
+@media (min-width: 581px) {
+  .dropdown {
+    display: none;
+  }
+}

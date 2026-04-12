@@ -1,0 +1,35 @@
+.foot-box {
+  background-color: #222;
+  color: white;
+  padding: 20px 0;
+  text-align: center; /* 👈 center everything */
+}
+
+/* Container layout */
+.footer-container {
+  display: flex;
+  flex-direction: column;   /* stack items vertically */
+  align-items: center;      /* center horizontally */
+  gap: 10px;                /* space between text & links */
+}
+
+/* Text */
+.footer-title {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Links */
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links span {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer-links span:hover {
+  color: #0d6efd;
+}
