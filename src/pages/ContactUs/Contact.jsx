@@ -1,7 +1,7 @@
 import React from "react";
 import "./Contact.css";
 
-function Contact() {
+function contact() {
   return (
     <div className="contact-box">
       <h1>📞 Contact Us</h1>
@@ -22,4 +22,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default contact;
