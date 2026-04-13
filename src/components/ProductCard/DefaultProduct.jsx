@@ -27,11 +27,6 @@ const allProducts =
       ? [...defaultProducts, ...extraProducts]
       : defaultProducts;
 
-  // useEffect(() => {
-  //   axios.get('https://api.escuelajs.co/api/v1/products')
-  //     .then(response => setDefaultProducts(response.data))
-  //     .catch(error => console.error("Error fetching products:", error));
-  // }, []);
   
   console.log(allProducts);
 
