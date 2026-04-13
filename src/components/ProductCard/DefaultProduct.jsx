@@ -15,9 +15,7 @@ function DefaultProducts({ extraProducts, setProducts }) {
     const offset = (page - 1) * limit;
 
     axios
-      .get(
-        `https://api.escuelajs.co/api/v1/products?offset=${offset}&limit=${limit}`
-      )
+      .get( `https://api.escuelajs.co/api/v1/products?offset=${offset}&limit=${limit}` )
       .then((response) => setDefaultProducts(response.data))
       .catch((error) =>
         console.error("Error fetching products:", error)

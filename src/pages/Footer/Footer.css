@@ -2,24 +2,22 @@
   background-color: #222;
   color: white;
   padding: 20px 0;
-  text-align: center; /* 👈 center everything */
+  text-align: center; 
 }
 
-/* Container layout */
 .footer-container {
   display: flex;
-  flex-direction: column;   /* stack items vertically */
-  align-items: center;      /* center horizontally */
-  gap: 10px;                /* space between text & links */
+  flex-direction: column;  
+  align-items: center;      
+  gap: 10px;                
 }
 
-/* Text */
+
 .footer-title {
   margin: 0;
   font-size: 14px;
 }
 
-/* Links */
 .footer-links {
   display: flex;
   gap: 20px;

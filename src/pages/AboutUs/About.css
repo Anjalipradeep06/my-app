@@ -13,7 +13,6 @@
   color: #666;
 }
 
-/* List */
 .about-list {
   display: flex;
   flex-direction: column;
@@ -37,7 +36,6 @@
   height: 100%;
 }
 
-/* ================== 921px ================== */
 @media (max-width: 921px) {
   .about-box {
     padding: 30px;
@@ -52,7 +50,6 @@
   }
 }
 
-/* ================== 580px ================== */
 @media (max-width: 580px) {
   .about-box {
     padding: 20px;
@@ -75,7 +72,6 @@
   }
 }
 
-/* ================== 330px ================== */
 @media (max-width: 330px) {
   .about-box h1 {
     font-size: 20px;

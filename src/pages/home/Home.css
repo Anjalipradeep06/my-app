@@ -5,7 +5,6 @@
   margin: auto;
 }
 
-/* Add button */
 .add-button {
   display: block;
   margin: 20px auto;
@@ -24,7 +23,6 @@
   background-color: #0b5ed7;
 }
 
-/* Card */
 .card {
   border-radius: 10px;
   overflow: hidden;
@@ -45,13 +43,11 @@
   color: #555;
 }
 
-/* Modal scroll fix */
 .modal-body {
-  max-height: 70vh;
+  max-height: 560px;
   overflow-y: auto;
 }
 
-/* ================== 921px ================== */
 @media (max-width: 921px) {
   .home-box {
     padding: 20px;
@@ -67,7 +63,6 @@
   }
 }
 
-/* ================== 580px ================== */
 @media (max-width: 580px) {
   .home-box {
     padding: 15px;
@@ -95,7 +90,6 @@
   }
 }
 
-/* ================== 330px ================== */
 @media (max-width: 330px) {
   .add-button {
     width: 100%;

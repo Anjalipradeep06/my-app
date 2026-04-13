@@ -21,7 +21,7 @@ function Navbar() {
         LuxeStyles
       </Link>
 
-      {/* 🔹 Normal Menu (Desktop) */}
+      
       <div className="menu desktop-menu">
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
@@ -29,7 +29,7 @@ function Navbar() {
         <button onClick={handleLogout}>Logout</button>
       </div>
 
-      {/* 🔹 Dropdown (Mobile) */}
+      
       <div className="dropdown mobile-menu">
         <button
           className="dropdown-btn"
